@@ -147,14 +147,16 @@ I had initally planned to run through the entire test set of 1489 examples, but 
 ## Concluding Remarks
 ### Strengths
 - Choice of using LLM enabled us to have good reasoning capability and it has massive potential for performance improvement.
-- Implementation of a cost-effective solution with a reasonable baseline accuracy.
+- State-of-the-art techniques (in DSPY) used to create the LLM pipeline using the most popular project from Stanford NLP lab.
+- Implementation of a cost-effective solution with a reasonable baseline accuracy in 4 hours.
 - We can control the structure of the LLM pipeline and prompts using DSPY.
 
 ### Weaknesses
 - Limited data used for training might not fully capture the complexity of the task.
+- We are reliant on the framework developed by DSPY. And the documentation of it is not the best. But with more time we can overcome this by implementing parts of this in house.
 - "question" column in training set not containing the full question hinders the ability of the model to reason as well.
 - Sparse labels for "irrelevant" and "non_domain" could lead to biases in model predictions.
-
+- The final pipeline is slow to run because of the LLM. It was also very slow to train.
 
 ### Opportunities
 - With more time and resources, integrating more comprehensive data and employing advanced models like GPT-4-turbo could enhance the model's performance.
