@@ -142,7 +142,7 @@ I had initally planned to run through the entire test set of 1489 examples, but 
 
 
 ## Error Analysis
-- Lots of over labelling of "partially correct incomplete class"
+- Lots of over labelling of "partially_correct_incomplete" class
 
 ## Concluding Remarks
 ### Strengths
