@@ -1,0 +1,79 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "What are the conditions that are required to make a bulb light up?",
+        "student_answer": "connection to a battery",
+        "reference_answer": "there is a closed path containing both the bulb and a battery",
+        "rationale": "produce the assessment. We first check if the student answer is a complete and correct paraphrase of the reference answer. In this case, the student answer is not a complete and correct paraphrase, as it only mentions one of the two conditions required for the bulb to light up. However, it is still partially correct as it correctly identifies the importance of a battery in the circuit. Therefore, the assessment is partially_correct_incomplete.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "augmented": true,
+        "question": "Why was bulb A on when switch Y was open and switch Z was closed?",
+        "student_answer": "because the path was closed",
+        "reference_answer": "Bulb A is still contained in a closed path with the battery.",
+        "rationale": "produce the assessment. We first check if the student answer is a complete and correct paraphrase of the reference answer. If it is, then we return \"correct\". If it is not, we check if the student answer is a partial",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "augmented": true,
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 1 and terminal 6.",
+        "student_answer": "terminal 1 is connected to the negative battery terminal and terminal 6 is connected to the positive battery terminal",
+        "reference_answer": "Terminals 1 and 6 are separated by the gap",
+        "rationale": "produce the assessment. We first check if the student answer is a complete and correct paraphrase of the reference answer. In this case, the student answer is not a complete and correct paraphrase of the reference answer. Then, we check if the student answer is a partial",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 1 and the positive terminal.",
+        "student_answer": "terminal 1 and the positive terminal are connected.",
+        "reference_answer": "Terminal 1 and the positive terminal are not connected",
+        "assessment": "contradictory"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 0 for terminal 1 and terminal 2.",
+        "student_answer": "Because they were both on the negative terminal.",
+        "reference_answer": "Terminals 1 and 2 are connected",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Why?",
+        "student_answer": "because a battery always has a charge in its positive terminal",
+        "reference_answer": "A battery uses a chemical reaction to maintain different electrical states at the terminals",
+        "assessment": "contradictory"
+      },
+      {
+        "question": "What does a voltage reading of 0 tell you about the connection between a bulb terminal and a battery terminal?",
+        "student_answer": "the terminal are seperated by a gap when the bulb goes out",
+        "reference_answer": "the terminals are connected",
+        "assessment": "irrelevant"
+      },
+      {
+        "question": "Explain why circuit 2 is not a short circuit.",
+        "student_answer": "There is a bulb connected to the battery terminal.",
+        "reference_answer": "The battery in 2 is not in a closed path",
+        "assessment": "irrelevant"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 0 for terminal 5 and the positive terminal.",
+        "student_answer": "Terminal 5 is connected to the postive battery terminal",
+        "reference_answer": "Terminal 5 and the positive terminal are connected",
+        "assessment": "correct"
+      },
+      {
+        "question": "As you move the multimeter leads from one bulb terminal to the next, what does it mean when the voltage reading jumps from 0 to 1.5?",
+        "student_answer": "There is a gap in between the terminals.",
+        "reference_answer": "the terminals are not connected",
+        "assessment": "correct"
+      }
+    ],
+    "signature_instructions": "\n    Your task is to assess the student's answer to the question by comparing with the reference answer\n    The value for assessment must be EXACTLY one of the following classes:\n    \"correct\", \"partially_correct_incomplete\", \"contradictory\", \"non_domain\", \"irrelevant\"\n    Include the underscores if the class contains it. Output nothing else.\n\n    Definitions of the classes:\n    correct: if the student answer is a complete and correct paraphrase of the reference answer\n    partially_correct_incomplete: \n    ",
+    "signature_prefix": "Assessment:",
+    "extended_signature_instructions": "\n    Your task is to assess the student's answer to the question by comparing with the reference answer\n    The value for assessment must be EXACTLY one of the following classes:\n    \"correct\", \"partially_correct_incomplete\", \"contradictory\", \"non_domain\", \"irrelevant\"\n    Include the underscores if the class contains it. Output nothing else.\n\n    Definitions of the classes:\n    correct: if the student answer is a complete and correct paraphrase of the reference answer\n    partially_correct_incomplete: \n    ",
+    "extended_signature_prefix": "Assessment:"
+  }
+}

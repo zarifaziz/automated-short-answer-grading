@@ -1,0 +1,213 @@
+{
+  "prog": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "What role does the path play in determining whether or not a switch affects a bulb?",
+        "student_answer": "if the bulb is contained within the path",
+        "reference_answer": "If a bulb and a switch are in the same path the switch affects the bulb",
+        "rationale": "produce the assessment. We can see that the student answer is partially correct, as it mentions the role of the path in determining whether or not a switch affects a bulb. However, it is not a complete answer as it does not mention the specific condition of the bulb being contained within the path. Therefore, the assessment is partially_correct_incomplete.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "augmented": true,
+        "question": "Why do you think those terminals and the negative battery terminal are in the same state?",
+        "student_answer": "Because bulb B is damaged and does not allow the positive battery current to reach the other side.",
+        "reference_answer": "Terminals 1, 2 and 3 are connected to the negative battery terminal",
+        "rationale": "produce the assessment. We can see that the student answer is partially correct as it mentions the damaged bulb B and its effect on the circuit. However, it does not mention the other terminals and their connection to the negative battery terminal, which is the main reason for the same state. Therefore, the answer is partially correct but incomplete.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "augmented": true,
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 1 and terminal 6.",
+        "student_answer": "terminal is connected to terminal 6",
+        "reference_answer": "Terminals 1 and 6 are separated by the gap",
+        "rationale": "produce the assessment. We can see that the student's answer is partially correct, as they correctly identified that the terminals are connected, but they did not mention the gap between them. Therefore, the student's answer is partially correct but incomplete.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "augmented": true,
+        "question": "Why do you think the other terminals are being held in a different electrical state than that of the negative terminal?",
+        "student_answer": "your an idiot",
+        "reference_answer": "Terminals 4, 5 and 6 are not connected to the negative battery terminal",
+        "rationale": "produce the assessment. We can see that the student's answer is not relevant to the question and does not provide any information about the electrical state of the other terminals. Therefore, it is considered as non_domain.",
+        "assessment": "non_domain"
+      },
+      {
+        "augmented": true,
+        "question": "Explain why circuit 4 is not a short circuit.",
+        "student_answer": "the bulb is not contained in a closed path",
+        "reference_answer": "Circuit 4 has no closed paths",
+        "rationale": "produce the assessment. We can see that the student answer is talking about the bulb not being in a closed path, which is not the same as saying that there are no closed paths in the circuit. Therefore, the student answer is not a complete paraphrase of the reference answer.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "augmented": true,
+        "question": "Why?",
+        "student_answer": "The voltage does not change.",
+        "reference_answer": "A battery uses a chemical reaction to maintain different electrical states at the terminals",
+        "rationale": "produce the assessment. We can see that the student answer is talking about voltage, which is a relevant domain concept. However, the answer does not provide any information about the connection between the bulb terminal and the battery terminal. Therefore, it is not a complete answer and cannot be considered partially correct. It also does not explicitly contradict the reference answer. However, it does not provide any relevant information, making it irrelevant.",
+        "assessment": "irrelevant"
+      },
+      {
+        "augmented": true,
+        "question": "Why do you think the other terminals are being held in a different electrical state than that of the negative terminal?",
+        "student_answer": "i dont know",
+        "reference_answer": "Terminals 4, 5 and 6 are not connected to the negative battery terminal",
+        "rationale": "produce the assessment. We can see that the student answer does not provide any relevant information about the electrical state of the other terminals. Therefore, it is considered as non_domain.",
+        "assessment": "non_domain"
+      },
+      {
+        "augmented": true,
+        "question": "Explain why you got a voltage reading of 0 for terminal 6 and the positive terminal.",
+        "student_answer": "you guys would get more honest feedback and answers if you didnt make this so boring and repeatdly ask the same questions. its not like your testing elementary school kids",
+        "reference_answer": "Terminal 6 and the positive terminal are connected",
+        "rationale": "produce the assessment. We can see that the student answer is not relevant to the domain content and does not provide any information about the connection between terminal 6 and the positive terminal. Therefore, it is considered as non_domain.",
+        "assessment": "non_domain"
+      },
+      {
+        "augmented": true,
+        "question": "Describe the paths in this diagram and explain how those paths account for the results.",
+        "student_answer": "im not sure how to",
+        "reference_answer": "Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.",
+        "rationale": "produce the assessment. We can see that the student answer does not provide any relevant information about the paths or how they account for the results. Therefore, it is considered non_domain.",
+        "assessment": "non_domain"
+      },
+      {
+        "augmented": true,
+        "question": "Under what circumstances will a damaged\/ burned out bulb affect another bulb?",
+        "student_answer": "if there is a gap in the path",
+        "reference_answer": "If they are in the same path the burned out bulb affects the other bulb.",
+        "rationale": "produce the assessment. We can see that the student answer mentions a gap in the path, which is partially correct. However, the reference answer specifically mentions that the bulbs must be in the same path for the damaged bulb to affect the other bulb. Therefore, the student answer is only partially correct and incomplete.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.",
+        "student_answer": "positive battery terminal is separated by a gap from terminal 3",
+        "reference_answer": "Terminal 3 and the positive terminal are not connected",
+        "assessment": "correct"
+      },
+      {
+        "question": "Explain your reasoning.",
+        "student_answer": "Bulbs A and B will still be contained in a closed path to the battery.",
+        "reference_answer": "bulbs A and B are still in closed paths with the battery",
+        "assessment": "correct"
+      },
+      {
+        "question": "When switch X was closed and switch Y was open, why was bulb A on?",
+        "student_answer": "Yes it was on",
+        "reference_answer": "Bulb A is still contained in a closed path with the battery and switch X.",
+        "assessment": "irrelevant"
+      },
+      {
+        "question": "Under what circumstances will a damaged\/ burned out bulb affect another bulb?",
+        "student_answer": "when they are both on the same closed path and would cause a gap",
+        "reference_answer": "If they are in the same path the burned out bulb affects the other bulb.",
+        "assessment": "correct"
+      },
+      {
+        "question": "Why does measuring voltage help you locate a burned out bulb? Try to answer in terms of electrical states, connections and\/ or a gap.",
+        "student_answer": "Because it determines the different electrical states between the terminals",
+        "reference_answer": "Measuring voltage indicates the place where the electrical state changes due to a gap.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Under what circumstances will a damaged\/ burned out bulb affect another bulb?",
+        "student_answer": "if bulb A burns out",
+        "reference_answer": "If they are in the same path the burned out bulb affects the other bulb.",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Why?",
+        "student_answer": "the terminal\"s electrical state is not effected by the incomplete circuit.",
+        "reference_answer": "A battery uses a chemical reaction to maintain different electrical states at the terminals",
+        "assessment": "contradictory"
+      },
+      {
+        "question": "Why does a damaged bulb impact a circuit?",
+        "student_answer": "it blocks the flow of electricity",
+        "reference_answer": "a damaged bulb creates a gap",
+        "assessment": "contradictory"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 1 and the positive terminal.",
+        "student_answer": "terminal 1 and the positive terminal are connected.",
+        "reference_answer": "Terminal 1 and the positive terminal are not connected",
+        "assessment": "contradictory"
+      },
+      {
+        "question": "Why?",
+        "student_answer": "the voltage of the battery does not depend on the components in a curcuit. It depends on a chemical reaction.",
+        "reference_answer": "A battery uses a chemical reaction to maintain different electrical states at the terminals",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Why not?",
+        "student_answer": "if switches X and Z are closed it will complete the closed circuit for bulb A",
+        "reference_answer": "there is still a closed path containing Switch Z, Switch X, Bulbs A and C and the battery",
+        "assessment": "contradictory"
+      },
+      {
+        "question": "Explain why circuit 5 is a short circuit.",
+        "student_answer": "path 5 is a short circuit.",
+        "reference_answer": "the battery is contained in a closed path in which there is no bulb",
+        "assessment": "irrelevant"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 1 and the positive terminal.",
+        "student_answer": "the positive terminal",
+        "reference_answer": "Terminal 1 and the positive terminal are not connected",
+        "assessment": "irrelevant"
+      },
+      {
+        "question": "As you move the multimeter leads from one bulb terminal to the next, what does it mean when the voltage reading jumps from 0 to 1.5?",
+        "student_answer": "The bulbs were connected and now they are not.",
+        "reference_answer": "the terminals are not connected",
+        "assessment": "correct"
+      },
+      {
+        "question": "Explain your reasoning.",
+        "student_answer": "I accounted for B when it wasn\"t pertinant to the question",
+        "reference_answer": "A and C are in different paths with the battery",
+        "assessment": "non_domain"
+      },
+      {
+        "question": "Why?",
+        "student_answer": "Because the chemical reaction is not effected by a gap.",
+        "reference_answer": "A battery uses a chemical reaction to maintain different electrical states at the terminals",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 1 and the positive terminal.",
+        "student_answer": "positive battery terminal",
+        "reference_answer": "Terminal 1 and the positive terminal are separated by the gap",
+        "assessment": "partially_correct_incomplete"
+      },
+      {
+        "question": "Why do you think the other terminals are being held in a different electrical state than that of the negative terminal?",
+        "student_answer": "Because they are connected to the positive terminal.",
+        "reference_answer": "Terminals 4, 5 and 6 are not connected to the negative battery terminal",
+        "assessment": "correct"
+      },
+      {
+        "question": "Explain why circuit 4 is not a short circuit.",
+        "student_answer": "i have no idea",
+        "reference_answer": "Circuit 4 has no closed paths",
+        "assessment": "non_domain"
+      },
+      {
+        "question": "Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.",
+        "student_answer": "The positive battery terminal is separated by a gap from terminal 1. and germinal 3 is connected to the negative battery termina",
+        "reference_answer": "Terminal 3 and the positive terminal are separated by the gap",
+        "assessment": "correct"
+      }
+    ],
+    "signature_instructions": "\n    Role: Academic Tutor\n    Task: Make an assessment of the student's answer by comparing it with the reference answer.\n    You are essentially assessing whether the student's answer was correct, or needs additional feedback.\n    \n    The value for assessment must be EXACTLY one of the following classes:\n    \"correct\", \"partially_correct_incomplete\", \"contradictory\", \"non_domain\", \"irrelevant\"\n    Include the underscores if the class contains it.\n\n    Definitions of the classes:\n    - correct: if the student answer is a complete and correct paraphrase of the reference answer\n    - partially_correct_incomplete: if it is a partially correct answer containing some but not\n    all information from the reference answer\n    - contradictory: if the student answer explicitly contradicts the reference answer\n    - irrelevant:  if the student answer is talking about domain content but not providing the necessary information\n    - non_domain: if the student utterance does not include domain content, e.g., \u201cI don\u2019t know\u201d, \u201cwhat the book says\u201d, \u201cyou are stupid\u201d\n\n    The \"question\" field doesn't provide too much context apart from the final few words of the problem.\n    So don't focus on the question too much.\n    ",
+    "signature_prefix": "Assessment:",
+    "extended_signature_instructions": "\n    Role: Academic Tutor\n    Task: Make an assessment of the student's answer by comparing it with the reference answer.\n    You are essentially assessing whether the student's answer was correct, or needs additional feedback.\n    \n    The value for assessment must be EXACTLY one of the following classes:\n    \"correct\", \"partially_correct_incomplete\", \"contradictory\", \"non_domain\", \"irrelevant\"\n    Include the underscores if the class contains it.\n\n    Definitions of the classes:\n    - correct: if the student answer is a complete and correct paraphrase of the reference answer\n    - partially_correct_incomplete: if it is a partially correct answer containing some but not\n    all information from the reference answer\n    - contradictory: if the student answer explicitly contradicts the reference answer\n    - irrelevant:  if the student answer is talking about domain content but not providing the necessary information\n    - non_domain: if the student utterance does not include domain content, e.g., \u201cI don\u2019t know\u201d, \u201cwhat the book says\u201d, \u201cyou are stupid\u201d\n\n    The \"question\" field doesn't provide too much context apart from the final few words of the problem.\n    So don't focus on the question too much.\n    ",
+    "extended_signature_prefix": "Assessment:"
+  }
+}

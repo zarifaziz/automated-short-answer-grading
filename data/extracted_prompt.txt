@@ -1,0 +1,262 @@
+Role: Academic Tutor
+    Task: Make an assessment of the student's answer by comparing it with the reference answer.
+    You are essentially assessing whether the student's answer was correct, or needs additional feedback.
+    
+    The value for assessment must be EXACTLY one of the following classes:
+    "correct", "partially_correct_incomplete", "contradictory", "non_domain", "irrelevant"
+    Include the underscores if the class contains it.
+
+    Definitions of the classes:
+    - correct: if the student answer is a complete and correct paraphrase of the reference answer
+    - partially_correct_incomplete: if it is a partially correct answer containing some but not
+    all information from the reference answer
+    - contradictory: if the student answer explicitly contradicts the reference answer
+    - irrelevant:  if the student answer is talking about domain content but not providing the necessary information
+    - non_domain: if the student utterance does not include domain content, e.g., “I don’t know”, “what the book says”, “you are stupid”
+
+    The "question" field doesn't provide too much context apart from the final few words of the problem.
+    So don't focus on the question too much.
+
+---
+
+Follow the following format.
+
+Question: ${question}
+
+Student Answer: ${student_answer}
+
+Reference Answer: ${reference_answer}
+
+Reasoning: Let's think step by step in order to ${produce the assessment}. We ...
+
+Assessment: the final assessment
+
+---
+
+Question: Why was bulb A on when switch Y was open and switch Z was closed?
+
+Student Answer: the battery was contained in a circut
+
+Reference Answer: Bulb A is still contained in a closed path with the battery.
+
+Reasoning: Let's think step by step in order to produce the assessment. We can see that the student's answer is partially correct, as they mention the battery being contained in a circuit, but they do not mention the switch Y being open and switch Z being closed. Therefore, the student's answer is partially correct but incomplete.
+
+Assessment: partially_correct_incomplete
+
+---
+
+Question: When switch X was closed and switch Y was open, why was bulb A on?
+
+Student Answer: It has its own closed path
+
+Reference Answer: Bulb A was still contained in the same closed path with the battery.
+
+Reasoning: Let's think step by step in order to produce the assessment. We can see that the student's answer is partially correct, as it correctly identifies that bulb A is in its own closed path. However, it does not mention that this closed path is still connected to the battery, which is an important detail. Therefore, the assessment should be "partially_correct_incomplete".
+
+Assessment: partially_correct_incomplete
+
+---
+
+Question: Explain your reasoning.
+
+Student Answer: i dont know
+
+Reference Answer: A and C are in different paths with the battery
+
+Reasoning: Let's think step by step in order to produce the assessment. We can see that the student answer is not providing any relevant information about the paths or the battery. Therefore, it is not a complete answer and does not contain any domain content.
+
+Assessment: non_domain
+
+---
+
+Question: Explain why you got a voltage reading of 1.5 for terminal 1 and the positive terminal.
+
+Student Answer: i dont know
+
+Reference Answer: Terminal 1 and the positive terminal are separated by the gap
+
+Reasoning: Let's think step by step in order to produce the assessment. We can see that the student answer does not provide any relevant information about the connection between terminal 1 and the positive terminal. They simply state that they do not know, which does not address the question at all. Therefore, the student answer falls under the non_domain class.
+
+Assessment: non_domain
+
+---
+
+Question: Under what circumstances will a switch affect a bulb?
+Student Answer: it will turn it off
+Reference Answer: When the switch and the bulb are contained in the same path
+Assessment: irrelevant
+
+---
+
+Question: Describe the paths in this diagram and explain how those paths account for the results.
+Student Answer: Bulb B and Bulb C are contained in a closed path.
+Reference Answer: Bulb A is in a path which does not contain B and C, so bulbs B and C don't affect it. Bulbs B and C are in the same path. They affect each other, but Bulb A doesn't affect them.
+Assessment: partially_correct_incomplete
+
+---
+
+Question: Explain why you got a voltage reading of 1.5 for terminal 2 and the positive terminal.
+Student Answer: The positive battery terminal is seperated by a gap from termnial one.
+Reference Answer: Terminal 2 and the positive terminal are separated by the gap
+Assessment: irrelevant
+
+---
+
+Question: Explain your reasoning.
+Student Answer: tell answer
+Reference Answer: If bulb A burns out, B and C are no longer in a closed path with the battery
+Assessment: non_domain
+
+---
+
+Question: What do you think the red X means?
+Student Answer: don"t do it.
+Reference Answer: the battery is damaged
+Assessment: irrelevant
+
+---
+
+Question: As you move the multimeter leads from one bulb terminal to the next, what does it mean when the voltage reading jumps from 0 to 1.5?
+Student Answer: There is a difference in electrical states.
+Reference Answer: the bulb is damaged
+Assessment: partially_correct_incomplete
+
+---
+
+Question: As you move the multimeter leads from one bulb terminal to the next, what does it mean when the voltage reading jumps from 0 to 1.5?
+Student Answer: there terminals are separated by a gap when the voltage jumps from 0 to 1.5.
+Reference Answer: the bulb is damaged
+Assessment: correct
+
+---
+
+Question: Explain why you got a voltage reading of 0 for terminal 1 and terminal 4.
+Student Answer: terminal 1 is connected to terminal 4.
+Reference Answer: Terminals 1 and 4 are connected
+Assessment: correct
+
+---
+
+Question: Why does measuring voltage help you locate a burned out bulb? Try to answer in terms of electrical states, connections and/ or a gap.
+Student Answer: there will be a gap between the positive battery terminal and the bulb terminal
+Reference Answer: Measuring voltage indicates the place where the electrical state changes due to a gap.
+Assessment: contradictory
+
+---
+
+Question: Explain why circuit 4 is not a short circuit.
+Student Answer: Because neither of the components are connected to themselves.
+Reference Answer: Circuit 4 has no closed paths
+Assessment: partially_correct_incomplete
+
+---
+
+Question: Explain why you got a voltage reading of 0 for terminal 6 and the positive terminal.
+Student Answer: i dont know
+Reference Answer: Terminal 6 and the positive terminal are connected
+Assessment: non_domain
+
+---
+
+Question: Explain why you got a voltage reading of 1.5 for terminal 1 and the positive terminal.
+Student Answer: Because the meter was hooked up to two sides of the battery.
+Reference Answer: Terminal 1 and the positive terminal are not connected
+Assessment: contradictory
+
+---
+
+Question: Explain why you got a voltage reading of 1.5 for terminal 3 and the positive terminal.
+Student Answer: The positive battery terminal is separated by a gap from terminal 1. and germinal 3 is connected to the negative battery termina
+Reference Answer: Terminal 3 and the positive terminal are separated by the gap
+Assessment: correct
+
+---
+
+Question: As you move the multimeter leads from one bulb terminal to the next, what does it mean when the voltage reading jumps from 0 to 1.5?
+Student Answer: jdkjgkfjg
+Reference Answer: the bulb is damaged
+Assessment: non_domain
+
+---
+
+Question: When switch X was closed and switch Y was open, why was bulb A on?
+Student Answer: because it was contained in same path as the battery
+Reference Answer: Bulb A was still contained in the same closed path with the battery.
+Assessment: partially_correct_incomplete
+
+---
+
+Question: Why do you think those terminals and the negative battery terminal are in the same state?
+Student Answer: they are have 0 volts.
+Reference Answer: Terminals 1, 2 and 3 are connected to the negative battery terminal
+Assessment: irrelevant
+
+---
+
+Question: Explain why you got a voltage reading of 1.5 for terminal 2 and the positive terminal.
+Student Answer: The positive battery terminal is separated by a gap from terminal 1.
+Reference Answer: Terminal 2 and the positive terminal are not connected
+Assessment: irrelevant
+
+---
+
+Question: Why?
+Student Answer: The voltage does not change.
+Reference Answer: A battery uses a chemical reaction to maintain different electrical states at the terminals
+Assessment: irrelevant
+
+---
+
+Question: Why do you think those terminals and the negative battery terminal are in the same state?
+Student Answer: Because bulb B is damaged and does not allow the positive battery current to reach the other side.
+Reference Answer: Terminals 1, 2 and 3 are connected to the negative battery terminal
+Assessment: partially_correct_incomplete
+
+---
+
+Question: Explain why you got a voltage reading of 1.5 for terminal 1 and terminal 6.
+Student Answer: they are seperated by a gap from bulb C
+Reference Answer: There is a gap between terminals 1 and 6
+Assessment: correct
+
+---
+
+Question: Explain your reasoning.
+Student Answer: njo
+Reference Answer: If bulb A burns out, B and C are no longer in a closed path with the battery
+Assessment: non_domain
+
+---
+
+Question: Why?
+Student Answer: because a battery always has a charge in its positive terminal
+Reference Answer: A battery uses a chemical reaction to maintain different electrical states at the terminals
+Assessment: contradictory
+
+---
+
+Question: Explain why you got a voltage reading of 0 for terminal 5 and the positive terminal.
+Student Answer: no gap
+Reference Answer: Terminal 5 and the positive terminal are connected
+Assessment: partially_correct_incomplete
+
+---
+
+Question: What role does the path play in determining whether or not a switch affects a bulb?
+Student Answer: bulb is contained in closed path
+Reference Answer: If a bulb and a switch are in the same path the switch affects the bulb
+Assessment: irrelevant
+
+---
+
+Question: What is voltage?
+Student Answer: measure of the difference between the elecrical states of two terminals.
+Reference Answer: Voltage is the difference in electrical states between two terminals
+Assessment: correct
+
+---
+
+Question: Why?
+Student Answer: Because it has one regardless of the circuit
+Reference Answer: A battery uses a chemical reaction to maintain different electrical states at the terminals
+Assessment: irrelevant
